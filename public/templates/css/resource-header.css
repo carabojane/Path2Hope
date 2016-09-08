@@ -1,0 +1,6 @@
+#hidden_menu {
+    display: none;
+}
+#toggle:hover #hidden_menu {
+    display: block;
+}

@@ -1,0 +1,39 @@
+<div>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container-fluid container-mainnav">
+  <div class="navbar-header">
+      <h1>Path 2 Hope</h1>
+  </div>
+  <div class="navbar-collapse collapse">
+    <div>
+      <ul class="nav navbar-nav">
+            <li data-pp-sectionname="Favorites" class="dropdown menu-large">
+                <a href="#" ng-mouseenter="toggleFocus()" ng-mouseleave="toggleFocus()">
+                    <span class="mainnav-item">
+                      <span class="mainnav-icon">
+                              <span class="hidden-lg"><i class="fa fa-heart fa-2x"></i></span>
+                              <span class="visible-lg-inline"><i class="fa fa-heart fa-3x"></i></span>
+                          </span>
+                          <span class="mainnav-title pad-more">My Favorites</span>
+                          <span class="mainnav-desc"><p>Sign in to access your saved resources</p></span>
+                    </span>
+                </a>
+                <ul class="dropdown-menu megamenu row" ng-mouseenter="toggleFocus()" ng-mouseleave="toggleFocus()" ng-style="{'display' : isFocused()}">
+                    <li class="container">
+                      <div class="col-sm-12 col-md-2 col-md-offset-2">
+                        <span class="subnav-heading">My Favorites</span>
+                        <span class="subnav-desc"><p>Sign in to access your saved resources</p></span>
+                      </div>
+                        <ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/Favorites">My Favorites</a></li></ul>
+                        <ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/Searches">My Searches</a></li></ul>
+                        <ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/Comparisons">My Comparisons</a></li></ul>
+                        <ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/UserAccount">My Settings</a></li></ul>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

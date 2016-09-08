@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routes">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .preview {
+        display: inline-block;
+        margin: 0 80px 0 0;
+      }
+      .centered-view {
+        max-width: 600px;
+        margin:0 auto;
+      }
+    </style>
+    <title>Path 2 Hope</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
+    <script src="/js/app.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://www.resourcehouse.info/win211/content/styles/bootstrap-theme?v=" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://www.resourcehouse.info/win211/content/styles/site?v=4NeSRXpGwTuVbsOg62Clp4oZpGeQ_pWOivzhdH0YXpg1" rel="stylesheet"/>
+    <link href="/templates/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="/templates/css/resource-header.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .loading {
+            text-align: center !important;
+            padding-top: 1em;
+        }
+    </style>
+    <link rel="manifest" href="https://www.resourcehouse.info/win211/Content/SiteIcons/en-US-north-light-win-211/manifest.json" />
+    <meta name="msapplication-TileImage" content="https://www.resourcehouse.info/win211/Content/SiteIcons/en-US-north-light-win-211/mstile-144x144.png" />
+    <meta name="msapplication-config" content="https://www.resourcehouse.info/win211/Content/SiteIcons/en-US-north-light-win-211/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body class="results">
+    <header>
+      <resource-header></resource-header>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div ng-view></div>
+    <footer class="footer">
+      <div class="container-fluid container-footer hidden-print"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  </body>
+</html>

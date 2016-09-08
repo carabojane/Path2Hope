@@ -1,0 +1,9 @@
+{
+  "name": "path-to-hope",
+  "version": "0.0.1",
+  "description": "charity application for createAThon",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.10.2"
+  }
+}

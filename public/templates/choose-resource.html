@@ -1,0 +1,42 @@
+<div class="centered-view">
+  <div class="row" >
+    <a ng-repeat="icon in top_icons" ng-href="#/subCategory/{{icon.title}}">
+      <div class="col-sm-3">
+        <div class="container">
+            <div>
+              <div>
+                  <h2>
+                    <span>
+                      <img ng-src="Icons/{{icon.file_name}}" title="{{icon.title}}" alt=""/>
+                      <p>
+                        {{icon.title}}
+                      </p>
+                    </span>
+                  </h2>
+              </div>
+            </div>
+        </div>
+      </div>
+    </a>
+    <br>
+    <br>
+  </div>
+    <div class="row">
+      <a ng-repeat="icon in bottom_icons" ng-href="#/subCategory/{{icon.title}}">
+        <div class="col-sm-3" >
+          <div class="container" >
+            <div >
+              <h2>
+                <span >
+                  <img ng-src="Icons/{{icon.file_name}}" title="{{icon.title}}" alt="" />
+                  <p class="iconText">
+                    {{icon.title}}
+                  </p>
+                </span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+</div>
