@@ -1,6 +1,5 @@
 angular.module('routes',['ngRoute'])
   .config(function($routeProvider) {
-    console.log('routeProvider is working');
     $routeProvider
       .when('/', {
         templateUrl:'templates/choose-resource.html',
