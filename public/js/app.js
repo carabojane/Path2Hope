@@ -20,11 +20,15 @@ angular.module('routes',['ngRoute'])
         templateUrl:'templates/SelectSubCat.html',
         controller:'SubCatController'
       })
+      .when('/findResources/:service', {
+        templateUrl:'templates/HopeNet.html',
+        controller:'ResultsController'
+      })
       .otherwise({
         redirectTo: "/"
       })
   })
-  .controller('ResourceController',function($location,$scope, icons) {
+  .controller('ResourceController',function($scope, icons) {
     $scope.top_icons = [];
     $scope.bottom_icons = [];
     var num_icons = icons.data.length;
@@ -37,9 +41,26 @@ angular.module('routes',['ngRoute'])
       }
     }
   })
-  .controller('SubCatController',function($scope,$routeParams,$window) {
+  .controller('SubCatController',function($scope,$routeParams,$window,$location) {
     $window.document.title = $routeParams.service;
     $scope.title = $routeParams.service;
+    $scope.findResources = function() {
+        var search_url = "/findResources/" + $routeParams.service;
+        $location.path(search_url);
+    };
+  })
+  .controller('ResultsController',function($scope,$routeParams,$location) {
+    $scope.list_obs = {};
+    $scope.list_obs['days'] = false;
+    $scope.list_obs['populations'] = false;
+    $scope.list_obs['hours'] = false;
+    $scope.list_obs['languages'] = false;
+    $scope.toggleExpand = function(category) {
+      $scope.list_obs[category] = !$scope.list_obs[category];
+    };
+    $scope.isExpanded = function(category) {
+      return $scope.list_obs[category];
+    };
   })
   .directive('resourceHeader',function() {
     return {
@@ -48,10 +69,10 @@ angular.module('routes',['ngRoute'])
       controller:function($scope) {
         var in_focus = false;
         $scope.toggleFocus = function() {
-          in_focus ^= true;
+          in_focus =  !in_focus;
         };
         $scope.isFocused = function() {
-          return in_focus? "block":"none";
+          return in_focus;
         };
       }
     };

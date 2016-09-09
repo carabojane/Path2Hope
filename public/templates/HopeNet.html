@@ -1,114 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Results</title>
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://www.resourcehouse.info/win211/content/styles/bootstrap-theme?v=" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://www.resourcehouse.info/win211/content/styles/site?v=4NeSRXpGwTuVbsOg62Clp4oZpGeQ_pWOivzhdH0YXpg1" rel="stylesheet"/>
-
-    <!--[if IE 8]>
-        <link href="https://www.resourcehouse.info/win211/content/styles/ie8?v=" rel="stylesheet"/>
-
-    <![endif]-->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <style type="text/css">
-        .loading {
-            text-align: center !important;
-            padding-top: 1em;
-        }
-    </style>
-
-    <link rel="manifest" href="https://www.resourcehouse.info/win211/Content/SiteIcons/en-US-north-light-win-211/manifest.json" />
-    <meta name="msapplication-TileImage" content="https://www.resourcehouse.info/win211/Content/SiteIcons/en-US-north-light-win-211/mstile-144x144.png" />
-    <meta name="msapplication-config" content="https://www.resourcehouse.info/win211/Content/SiteIcons/en-US-north-light-win-211/browserconfig.xml" />
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#ffffff">
-
-</head>
-
-<body class="results">
-
-<header>
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container-fluid container-mainnav">
-            <div class="navbar-header">
-                <h1>Path 2 Hope</h1>
-            </div>
-            <div class="navbar-collapse collapse">
-                <div class="">
-                    <ul class="nav navbar-nav">
-				                  <li data-pp-sectionname="Favorites" class="dropdown menu-large">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            			<span class="mainnav-item"><span class="mainnav-icon">
-                                            <span class="hidden-lg"><i class="fa fa-heart fa-2x"></i></span>
-                                            <span class="visible-lg-inline"><i class="fa fa-heart fa-3x"></i></span>
-                                        </span>
-                                        <span class="mainnav-title pad-more">My Favorites</span>
-                                        <span class="mainnav-desc"><p>Sign in to access your saved resources</p></span>
-                                  </span>
-                        			</a>
-                    					<ul class="dropdown-menu megamenu row">
-                      					  <li class="container">
-                            			<div class="col-sm-12 col-md-2 col-md-offset-2 container-subnav-heading hidden-xs">
-                                				<span class="subnav-heading">My Favorites</span>
-                                				<span class="subnav-desc"><p>Sign in to access your saved resources</p></span>
-                            			</div>
-                            					<ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/Favorites">My Favorites</a></li></ul>
-                               				<ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/Searches">My Searches</a></li></ul>
-                           						<ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/Comparisons">My Comparisons</a></li></ul>
-                            					<ul class="col-sm-6 col-md-2"><li><a href="/win211/Account/UserAccount">My Settings</a></li></ul>
-                       				    </li>
-                    				  </ul>
-                          </li>
-
-</span></span>
-</a>
-          <ul class="dropdown-menu megamenu row">
-              <li class="container">
-                  <div class="col-sm-12 col-md-2 col-md-offset-2 container-subnav-heading hidden-xs">
-                      <span class="subnav-heading">My Favorites</span>
-                      <span class="subnav-desc"><p>Sign in to access your saved resources</p></span>
-                  </div>
-                  <ul class="col-sm-6 col-md-2">
-                      <li><a href="/win211/Account/Favorites">My Favorites</a></li>
-                      <li><a href="/win211/Account/Searches">My Searches</a></li>
-                  </ul>
-                  <ul class="col-sm-6 col-md-2">
-                      <li><a href="/win211/Account/Comparisons">My Comparisons</a></li>
-                  </ul>
-                  <ul class="col-sm-6 col-md-2">
-                          <li><a href="/win211/Account/UserAccount">My Settings</a></li>
-                  </ul>
-              </li>
-          </ul>
-
-        </div>
-    </div>
-</header>
-
-
-
-
-
-<div id="main" class="main">
-    <a name="content" id="content"></a>
-
-    <div id="MainContent">
-
-
-
+<div>
 <div class="modal fade" id="EmailResults" tabindex="-1" role="dialog" aria-labelledby="EmailResults" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -417,8 +307,8 @@
 
 <ul class="list-group lvl-1">
             <li class="list-group-item ">
-                <a href="#collapse-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1">Days of the Week<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
-                <ul class="list-group lvl-2 collapse" id="collapse-1">
+                <a ng-click="toggleExpand('days')">Days of the Week<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
+                <ul class="list-group lvl-2 collapse in" aria-expanded="true" ng-style="" ng-show="isExpanded('days')">
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Days+of+the+Week%3dThursday" rel="nofollow"><span class="badge">53</span> Thursday<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Days+of+the+Week%3dTuesday" rel="nofollow"><span class="badge">53</span> Tuesday<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Days+of+the+Week%3dWednesday" rel="nofollow"><span class="badge">51</span> Wednesday<i class="def fa fa-square-o"></i></a></li>
@@ -444,8 +334,8 @@
                 </ul>
             </li>
             <li class="list-group-item ">
-                <a href="#collapse-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3">Focus Populations<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
-                <ul class="list-group lvl-2 collapse" id="collapse-3">
+                <a ng-click="toggleExpand('populations')">Focus Populations<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
+                <ul class="list-group lvl-2 collapse in" aria-expanded="true" ng-style="" ng-show="isExpanded('populations')">
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Focus+Populations%3dOffenders" rel="nofollow"><span class="badge">35</span> Offenders<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Focus+Populations%3dSingle+Women" rel="nofollow"><span class="badge">26</span> Single Women<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Focus+Populations%3dSingle+Men" rel="nofollow"><span class="badge">22</span> Single Men<i class="def fa fa-square-o"></i></a></li>
@@ -479,16 +369,16 @@
                 </ul>
             </li>
             <li class="list-group-item ">
-                <a href="#collapse-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-4">Hours of Service<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
-                <ul class="list-group lvl-2 collapse" id="collapse-4">
+                <a ng-click="toggleExpand('hours')">Hours of Service<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
+                <ul class="list-group lvl-2 collapse in" aria-expanded="true" ng-style="" ng-show="isExpanded('hours')">
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Hours+of+Service%3dOvernight" rel="nofollow"><span class="badge">7</span> Overnight<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Hours+of+Service%3dAvailable+before+noon" rel="nofollow"><span class="badge">1</span> Available before noon<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Hours+of+Service%3dAvailable+between+noon+and+5pm" rel="nofollow"><span class="badge">1</span> Available between noon and 5pm<i class="def fa fa-square-o"></i></a></li>
                                     </ul>
             </li>
             <li class="list-group-item ">
-                <a href="#collapse-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-5">Languages other than English<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
-                <ul class="list-group lvl-2 collapse" id="collapse-5">
+                <a ng-click="toggleExpand('languages')">Languages other than English<span class="glyphicon glyphicon-menu glyphicon-menu-down"></span></a>
+                <ul class="list-group lvl-2 collapse in" aria-expanded="true" ng-style="" ng-show="isExpanded('languages')">
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Languages+other+than+English%3dInterpreter+services" rel="nofollow"><span class="badge">19</span> Interpreter services<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Languages+other+than+English%3dSpanish" rel="nofollow"><span class="badge">17</span> Spanish<i class="def fa fa-square-o"></i></a></li>
                         <li class="list-group-item"><a href="?q=Emergency+Shelter&amp;loc=Seattle%2c+WA+98101&amp;geo=47.6114%2c-122.3305&amp;reg=King%2c+WA&amp;o=distance-asc&amp;f=Languages+other+than+English%3dVietnamese" rel="nofollow"><span class="badge">3</span> Vietnamese<i class="def fa fa-square-o"></i></a></li>
@@ -931,86 +821,4 @@
         </div>
         <div id="ComparisonContent" class="comparison">
         </div>
-    </div>
 </div>
-
-
-
-<footer class="footer">
-    <div class="container-fluid container-footer hidden-print">
-    </div>
-</footer>
-
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script>(window.jquery)||document.write('<script src="/win211/bundles/jquery"><\/script>');</script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script>($.fn.modal)||document.write('<script src="/win211/bundles/bootstrap"><\/script>');</script>
-
-    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBAaPVe7svDBDguCUpgqBzMCuuttb1I0kY&libraries=places&region=US"></script>
-
-<script src="/win211/bundles/chat?v=aczfeAsN44cNTngjyAU72QlwE40f4l_vQvJDWNYSf9Q1"></script>
-    <script type="text/javascript">
-    (function (publicPortal, $, undefined) {
-        publicPortal.applicationName = "Washington Information Network 2-1-1";
-        publicPortal.chatServer = "secure2.revation.com";
-        publicPortal.chatId = "chat@win211.org";
-        publicPortal.chatGroup = "win211";
-        publicPortal.DefaultStateCode = "WA";
-        publicPortal.SignInUrl = "/win211/Account/SignIn";
-        publicPortal.ComparisonUrl = "/win211/Providers/Compare";
-        publicPortal.CreateComparisonExcel = "/win211/Export/Comparison/Excel";
-        publicPortal.CreateDirectoryUrl = "/win211/Export/Directory/Create";
-        publicPortal.CreateExcel = "/win211/Export/Excel";
-        publicPortal.GetDirectoryUrl = "/win211/Export/Directory";
-        publicPortal.EmailResultsUrl = "/win211/Export/EmailResults";
-        publicPortal.SaveComparisonUrl = "/win211/Account/SaveComparison";
-        publicPortal.SaveSearchUrl = "/win211/Account/SaveSearch";
-        publicPortal.SaveFavoriteUrl = "/win211/Account/SaveFavorite";
-        publicPortal.SubmitReviewUrl = "/win211/Search/SubmitReview";
-        publicPortal.GooglePlacesDefaultBounds = "41.9428321536,-99.9248261452,49.4553354395,-89.4890289307";
-                    publicPortal.RequireSearchRegion = true;
-
-
-        if ("" !== publicPortal.chatServer && "" !== publicPortal.chatId) {
-            mbaLiveChat.Initialize({
-                chatServer: "secure2.revation.com",
-                chatId: "chat@win211.org",
-                chatGroup: "win211",
-                usingChatQuestions: ("true" === "false"),
-                chatOnlineUrl: "Chat/Online?site=Washington+Information+Network+2-1-1",
-                chatOfflineUrl: "Chat/Offline?site=Washington+Information+Network+2-1-1",
-            });
-        }
-
-    }(window.publicPortal = window.publicPortal || {}, jQuery));
-</script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-4735116-13', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-
-    <!--[if lt IE 10]>
-    <script src="https://www.resourcehouse.info/win211/bundles/ie?v=OVQ9TFoAJI1fW6BO7pKTGyo1_EgBIIN4ZSRv-k4h5gA1"></script>
-
-    <![endif]-->
-    <script src="https://www.resourcehouse.info/win211/bundles/application?v=DobLMyLycdb67am3cTZ40wHO8HezJorE1dViZRXu2oc1"></script>
-    <script src="https://www.resourcehouse.info/win211/bundles/results?v=EWiHBhC9OwKhFZk0MMFGXqMA_UD3dDhe5vaOa_tqL4k1"></script>
-    <script src="https://www.resourcehouse.info/win211/bundles/jqueryval?v=r62AOvk2D5j0wcx0JWSt2u-rH2BQeuwr6ZHzphwzIqA1"></script>
-
-        <script type="text/javascript">
-            (function () {
-                publicPortal.KeywordTypeahead({ "remote": "https://www.resourcehouse.info/win211/Search/Suggestions?q=%25QUERY)" });
-            })();
-        </script>
-
-
-</body>
-</html>
